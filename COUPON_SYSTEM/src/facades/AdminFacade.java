@@ -37,9 +37,10 @@ public class AdminFacade implements ClientFacade
 	// Removes company, if it exists
 	private void removeCompany(Company company)
 	{
-		this.adminConnection.removeCompany
+		this.adminConnection.getCoupons
+		this.adminConnection.removeCompany(company.id);
 	}
-	//
+	// 
 	private void updateCompany(Company company)
 	{
 		
