@@ -1,6 +1,6 @@
 package facades;
 
-import exceptions.InvalidLoginException;
+import exceptions.*;
 
 public class AdminFacade implements ClientFacade
 {
@@ -24,15 +24,31 @@ public class AdminFacade implements ClientFacade
 		{
 			throw new InvalidLoginException();
 		}
-		// else - create new Facade Object
-		AdminFacade adminLogin = new AdminFacade();
-		// return Facade
+		// else - create and return new Facade Object
 		return new AdminFacade();
 	}
-
 	// Create new company
-	
-	
-	
-	
+	private void createCompany(Company newCompany)
+	{
+		// if newCompany does not exist - add it
+		if(this.adminConnection.getCompany(newCompany.getId) == null)
+			this.adminConnection.addCompany(newCompany);
+	}
+	// Removes company, if it exists
+	private void removeCompany(Company company)
+	{
+		this.adminConnection.removeCompany
+	}
+	//
+	private void updateCompany(Company company)
+	{
+		
+	}
+	// Find Company by id or throw objectDontExistException
+	private Company getCompany(int id) throws objectDontExistException
+	{
+		Company company = this.adminConnection.getCompany(id);
+
+		return company;
+	}
 }
