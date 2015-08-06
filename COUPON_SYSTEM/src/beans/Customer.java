@@ -1,13 +1,13 @@
 package beans;
 
-import java.util.Collection;
+import java.util.ArrayList;
 
 public class Customer {
 
 	long id;
 	String custName;
 	String password;
-	Collection<Coupon> coupons;
+	ArrayList<Coupon> coupons;
 	
 	Customer(){
 		
@@ -37,11 +37,11 @@ public class Customer {
 		this.password = password;
 	}
 
-	public Collection<Coupon> getCoupons() {
+	public ArrayList<Coupon> getCoupons() {
 		return coupons;
 	}
 
-	public void setCoupons(Collection<Coupon> coupons) {
+	public void setCoupons(ArrayList<Coupon> coupons) {
 		this.coupons = coupons;
 	}
 

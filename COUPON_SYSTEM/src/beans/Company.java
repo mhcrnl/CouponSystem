@@ -1,15 +1,15 @@
 package beans;
 
-import java.util.Collection;
+import java.util.ArrayList;
 
 public class Company {
-	long id;
-	String compName;
-	String password;
-	String email;
-	Collection<Coupon> coupons;
+	private long id;
+	private String compName;
+	private String password;
+	private String email;
+	private ArrayList<Coupon> coupons;
 
-	Company() {
+	public Company() {
 
 	}
 
@@ -49,11 +49,11 @@ public class Company {
 		this.email = email;
 	}
 
-	public Collection<Coupon> getCoupons() {
+	public ArrayList<Coupon> getCoupons() {
 		return coupons;
 	}
 
-	public void setCoupons(Collection<Coupon> coupons) {
+	public void setCoupons(ArrayList<Coupon> coupons) {
 		this.coupons = coupons;
 	}
 

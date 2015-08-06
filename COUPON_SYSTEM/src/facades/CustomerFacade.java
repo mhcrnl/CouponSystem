@@ -6,8 +6,7 @@ public class CustomerFacade implements ClientFacade
 {
 
 	@Override
-	public ClientFacade login(String name, String password, String clientType)
-			throws InvalidLoginException
+	public ClientFacade login(String name, String password) throws InvalidLoginException
 	{
 		// TODO Auto-generated method stub
 		return null;

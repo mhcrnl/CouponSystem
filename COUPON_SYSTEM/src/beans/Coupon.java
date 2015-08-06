@@ -9,7 +9,7 @@ public class Coupon {
 	private Date endDate;
 	private int amount;
 	private CouponType type;
-	private String messafe;
+	private String message;
 	private double price;
 	private String image;
 	
@@ -64,12 +64,12 @@ public class Coupon {
 		this.type = type;
 	}
 
-	public String getMessafe() {
-		return messafe;
+	public String getMessage() {
+		return message;
 	}
 
 	public void setMessafe(String messafe) {
-		this.messafe = messafe;
+		this.message = messafe;
 	}
 
 	public double getPrice() {
@@ -92,12 +92,12 @@ public class Coupon {
 	public String toString() {
 		return "Coupon [id=" + id + ", title=" + title + ", startDate="
 				+ startDate + ", endDate=" + endDate + ", amount=" + amount
-				+ ", type=" + type + ", messafe=" + messafe + ", price="
+				+ ", type=" + type + ", message=" + message + ", price="
 				+ price + ", image=" + image + ", getId()=" + getId()
 				+ ", getTitle()=" + getTitle() + ", getStartDate()="
 				+ getStartDate() + ", getEndDate()=" + getEndDate()
 				+ ", getAmount()=" + getAmount() + ", getType()=" + getType()
-				+ ", getMessafe()=" + getMessafe() + ", getPrice()="
+				+ ", getMessage()=" + getMessage() + ", getPrice()="
 				+ getPrice() + ", getImage()=" + getImage() + ", getClass()="
 				+ getClass() + "]";
 	}
